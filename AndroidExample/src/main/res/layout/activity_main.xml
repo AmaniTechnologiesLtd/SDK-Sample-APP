@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.amani.ai.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_margin="@dimen/sp_16"
+        android:text="@string/production_server"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_margin="@dimen/sp_16"
+        android:text="@string/str_message"/>
+
+    <EditText
+        android:id="@+id/email_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:background="@drawable/edit_text_border"
+        android:padding="@dimen/dp_10"
+        android:hint="@string/email"
+        android:textSize="@dimen/sp_14"
+        android:textColorHint="@color/color_white"
+        android:layout_margin="@dimen/sp_16"
+        />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:background="@drawable/edit_text_border"
+        android:padding="@dimen/dp_10"
+        android:hint="@string/password"
+        android:textSize="@dimen/sp_14"
+        android:textColorHint="@color/color_white"
+        android:layout_margin="@dimen/sp_16"
+        />
+
+    <EditText
+        android:id="@+id/search_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:background="@drawable/edit_text_border"
+        android:padding="@dimen/dp_10"
+        android:hint="@string/tcn_number"
+        android:textSize="@dimen/sp_14"
+        android:textColorHint="@color/color_white"
+        android:layout_margin="@dimen/sp_16"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp_16"
+        android:padding="@dimen/dp_10"
+        android:text="@string/start_kyc"
+        android:background="@drawable/button_border"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (5.0.0-beta.7)
+  - Amani (1.0.0):
+    - Alamofire (= 5.0.0-beta.7)
+    - iProgressHUD
+    - IQKeyboardManagerSwift (= 6.3.0)
+    - OpenSSL-Universal/Framework
+    - SwiftLint
+  - iProgressHUD (1.1.1)
+  - IQKeyboardManagerSwift (6.3.0)
+  - OpenSSL-Universal/Framework (1.0.2.20)
+  - SwiftLint (0.39.1)
+
+DEPENDENCIES:
+  - Amani (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iProgressHUD
+    - IQKeyboardManagerSwift
+    - OpenSSL-Universal
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  Amani:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: bd07938ceecad59d2492aeecb1f785a8f2721160
+  Amani: 4ba39b08d099b65f2005817a0df8034b5bdfcfaf
+  iProgressHUD: caa742128253c97f2c2e1ec59e2bbe6cf689df6a
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  OpenSSL-Universal: ff34003318d5e1163e9529b08470708e389ffcdd
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+
+PODFILE CHECKSUM: 7dd09b0dce3ca06ea428c0faf38724282306a5bb
+
+COCOAPODS: 1.8.4

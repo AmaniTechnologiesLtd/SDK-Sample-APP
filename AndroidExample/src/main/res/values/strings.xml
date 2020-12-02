@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Amani</string>
+    <string name="str_message">If not filled customer created. If filled with an ID Number old customer used for KYC process so you can see rejection message etc</string>
+    <string name="tcn_number">TCN NUMBER</string>
+    <string name="email">EMAIL ID</string>
+    <string name="password">PASSWORD</string>
+    <string name="start_kyc">START KYC</string>
+    <string name="production_server">Production Server</string>
+</resources>

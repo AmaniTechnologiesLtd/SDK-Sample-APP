@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q8x-5R-y9Y">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Amani_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-CX-Its">
+                                <rect key="frame" x="16" y="335" width="343" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dyy-Ot-Csn"/>
+                                </constraints>
+                                <state key="normal" title="Start KYC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="go:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ffn-qD-yvs"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cz-6o-rDU">
+                                <rect key="frame" x="16" y="269" width="343" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ikW-Af-ECU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-of-8W4">
+                                <rect key="frame" x="16" y="171" width="343" height="81.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">If not filled new customer created. If filled with an ID Number old customer used for KYC process so you can see rejection message etc.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Production Server" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-2M-jle">
+                                <rect key="frame" x="16" y="134.5" width="343" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3G3-of-8W4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="9EY-Ts-EA3"/>
+                            <constraint firstItem="3G3-of-8W4" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-100" id="9OD-Ke-aSx"/>
+                            <constraint firstItem="sMP-2M-jle" firstAttribute="leading" secondItem="3G3-of-8W4" secondAttribute="leading" id="DKe-1f-5RF"/>
+                            <constraint firstItem="0Cz-6o-rDU" firstAttribute="trailing" secondItem="3G3-of-8W4" secondAttribute="trailing" id="JpH-2D-lKR"/>
+                            <constraint firstAttribute="trailing" secondItem="3G3-of-8W4" secondAttribute="trailing" constant="16" id="RSr-Y8-L8k"/>
+                            <constraint firstItem="BHy-CX-Its" firstAttribute="leading" secondItem="3G3-of-8W4" secondAttribute="leading" id="Uk0-cI-C9u"/>
+                            <constraint firstItem="3G3-of-8W4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fTd-LY-T3c"/>
+                            <constraint firstItem="0Cz-6o-rDU" firstAttribute="top" secondItem="3G3-of-8W4" secondAttribute="bottom" constant="16.5" id="lGl-Bo-rWP"/>
+                            <constraint firstItem="BHy-CX-Its" firstAttribute="trailing" secondItem="3G3-of-8W4" secondAttribute="trailing" id="pRl-3q-wkJ"/>
+                            <constraint firstItem="sMP-2M-jle" firstAttribute="trailing" secondItem="3G3-of-8W4" secondAttribute="trailing" id="u4x-Fa-9vS"/>
+                            <constraint firstItem="3G3-of-8W4" firstAttribute="top" secondItem="sMP-2M-jle" secondAttribute="bottom" constant="16" id="v8A-Ot-2w9"/>
+                            <constraint firstItem="0Cz-6o-rDU" firstAttribute="leading" secondItem="3G3-of-8W4" secondAttribute="leading" id="wOt-kr-kub"/>
+                            <constraint firstItem="BHy-CX-Its" firstAttribute="top" secondItem="0Cz-6o-rDU" secondAttribute="bottom" constant="16" id="zM3-fw-bCi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aZi-Zt-Na7"/>
+                    <connections>
+                        <outlet property="cardNumTextField" destination="0Cz-6o-rDU" id="RWp-Gw-3jz"/>
+                        <outlet property="kycBtn" destination="BHy-CX-Its" id="oeR-89-1HQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3893.5999999999999" y="124.58770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4gj-BN-e6q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q8x-5R-y9Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="fXl-Fa-kj9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="6W3-Pb-KBP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KN0-qC-moo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954.4000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
