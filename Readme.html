@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p>Amani Web SDK API documentation</p>
+<h1 id="amani-web-sdk-api">Amani Web SDK API</h1>
+<p>Amani Web SDK API’s endpoints can be categorized as 3 groups:</p>
+<ul>
+<li>Authorization &amp; Authentication</li>
+<li>Redirect User to Web SDK</li>
+<li>Uploading document<br>
+You should follow authorization mechanics in all of your requests except the login will provide a token for you.</li>
+</ul>
+<h1 id="auth">Auth</h1>
+<p>Amani Web SDK uses JWT Auth in multiple layers. You basically get a token from Amani API for a new sinle user and add that token first Web SDK request. Web Sdk is going to handle authorizaion for that user</p>
+<pre><code>HOST: https://tr.amani.ai/api/v1/customer/{customerID}/jwt
+Method: Get
+Content-Type: text/html; charset=utf-8
+
+
+Sapmle Request https://tr.amani.ai/api/v1/customer/123456789/jwt
+
+</code></pre>
+<p>This will give you an answer like below that contains your token:</p>
+<pre><code>{
+
+"token": "fyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluQGFtYW5pLnRlY2giLCJleHAiOjE2MDc1ODgzNDEsImVtYWlsIjoiYWRtaW5AYW1hbmkudGVjaCIsImN1c3RvbWVyX2lkIjoiMTE4OCJ9.FsENkMTjQ0_y5ONlTNa86zMQ-k5E4ZEe3p2bEiYlRXM"
+
+}
+</code></pre>
+<h2 id="redirect-user-to-web-sdk">Redirect User to Web SDK</h2>
+<p>After you created the token for single user. You can redirect user to amani Web SDK page with created token. You should add params below like below.</p>
+<pre><code>https://client.amani.ai/?tk={token}&amp;id={CustomerIdentiyCardNumber}&amp;rl={returnLink}&amp;bu={baseUrl}&amp;ln={languageCode}
+
+token:fyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluQGFtYW5pLnRlY2giLCJleHAiOjE2MDc1ODgzNDEsImVtYWlsIjoiYWRtaW5AYW1hbmkudGVjaCIsImN1c3RvbWVyX2lkIjoiMTE4OCJ9.FsENkMTjQ0_y5ONlTNa86zMQ-k5E4ZEe3p2bEiYlRXM(which is created at Auth section)
+
+CustomerIdentiyCardNumber : 12345678901 (Tc identifiy number)
+
+returnLink : amani.ai (your company application link without https and www -User will redirect your page after completed idedity verification)
+
+
+&lt;----optional Values---&gt;
+
+baseUrl: amani.ai ( Wed Sdk will make reuestes to amani server if you want to handle requestes at your own server please add your baseUrl value)
+
+languageCode : tr ( en for english, tr for turkish -User will see Web SDK page in choosen language)
+
+Sapmle Link https://client.amani.ai/?tk=fyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluQGFtYW5pLnRlY2giLCJleHAiOjE2MDc1ODgzNDEsImVtYWlsIjoiYWRtaW5AYW1hbmkudGVjaCIsImN1c3RvbWVyX2lkIjoiMTE4OCJ9.FsENkMTjQ0_y5ONlTNa86zMQ-k5E4ZEe3p2bEiYlRXM&amp;id=12345678901&amp;rl=amani.ai&amp;bu=amani.ai&amp;ln=tr
+</code></pre>
+<h2 id="uploading-document">Uploading document</h2>
+<p>User will follow steps and complete to upload necessary documents. When all required documents uploaded and user identity verificated, user will be redirected to your company page.</p>
+</div>
+</body>
+
+</html>
